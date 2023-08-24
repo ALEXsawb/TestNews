@@ -45,8 +45,8 @@ export const login = (username, password, refresh_token=null) => (dispatch) => {
     authAPI.login(username, password).then(response => {
             if (response.status === 200){
                 dispatch(authorizedUser(response.data.access, response.data.refresh))
-                Cookies.set('access_token', response.data.access, { expires: 5/24/12 });
-                Cookies.set('refresh_token', response.data.refresh, { expires: 5/24/6 });
+                Cookies.set('access_token', response.data.access, { expires: 1 });
+                Cookies.set('refresh_token', response.data.refresh, { expires: 10 });
             }
             else if(response.status === 401 && refresh_token){
                 dispatch(refresh(refresh_token))
