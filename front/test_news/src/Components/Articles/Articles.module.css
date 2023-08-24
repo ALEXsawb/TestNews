@@ -1,0 +1,60 @@
+.articles{
+    margin-top: 5%;
+    display: grid;
+    row-gap: 15px;
+}
+
+.article, .admin_article{
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr 1fr;
+    background-color: grey;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #282c34;
+}
+
+.admin_article{
+    grid-template-columns: 10fr 1fr 1fr;
+}
+
+.admin_article i{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.admin_article a{
+    color: #282c34;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.category_name{
+    display: grid;
+    justify-content: end;
+}
+
+.pagination{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.pagination span{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.articles button{
+    padding: 10px 15px;
+    background-color: dimgrey;
+    border: none;
+    border-radius: 17px;
+}
+
+.articles button:active{
+    background-color: darkgrey;
+}

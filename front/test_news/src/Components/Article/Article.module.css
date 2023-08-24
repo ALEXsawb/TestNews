@@ -1,0 +1,60 @@
+.article{
+    display: grid;
+    justify-content: center;
+    margin: 5% auto 5% auto;
+    padding: 2% 5% 2% 5%;
+    background-color: darkgrey;
+    min-width: 600px;
+    max-width: 75%;
+    border-radius: 15px;
+}
+
+.article i{
+    cursor: pointer;
+}
+
+.section button{
+    display: grid;
+    margin-left: auto;
+    background-color: dimgrey;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.section button:active{
+    background-color: darkgrey;
+}
+
+.config{
+    display: grid;
+    grid-template-columns: 16fr 1fr;
+}
+
+.text{
+    max-width: 75%;
+}
+
+.admin_header{
+    display: grid;
+    grid-template-columns: 15fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.admin_header h1{
+    display: grid;
+    justify-self: start;
+}
+
+.img_describe_text, img{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+
+img{
+    width: 75%;
+}
